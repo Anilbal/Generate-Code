@@ -5,7 +5,7 @@ const Logo: React.FC = () => (
   <LogoContainer>
     <h1>generative-code</h1>
     <IconWrapper>
-      <CodeIcon />
+      <CodeIcon color="var(--color-primary)" />
     </IconWrapper>
   </LogoContainer>
 );
