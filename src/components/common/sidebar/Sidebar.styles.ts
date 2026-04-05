@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SidebarContainer = styled.aside`
   width: 260px;
   height: calc(100vh - 64px); /* Subtracting navbar height */
-  background-color: var(--color-surface);
+  background-color: var(--color-background);
   border-right: 1px solid var(--color-border);
   padding: 1.5rem 1rem;
   display: flex;
@@ -13,15 +13,6 @@ export const SidebarContainer = styled.aside`
   position: sticky;
   top: 64px;
   align-self: flex-start;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    border-right: none;
-    border-bottom: 1px solid #e5e7eb;
-  }
 `;
 
 export const SidebarItem = styled.div<{ isActive?: boolean }>`
