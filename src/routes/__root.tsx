@@ -3,8 +3,17 @@ import { Outlet, createRootRoute } from "@tanstack/react-router";
 import { Navbar, Sidebar } from "../components/common";
 import styled from "styled-components";
 
-export const MainContent=styled.div`
-`
+const MainContent = styled.div`
+  display: flex;
+  flex: 1;
+`;
+
+const ContentArea = styled.main<{ isPreview?: boolean }>`
+  flex: 1;
+  padding: ${(props) => (props.isPreview ? "0" : "2rem")};
+  background-color: ${(props) => (props.isPreview ? "white" : "#f3f4f6")};
+  overflow-y: auto;
+`;
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -16,7 +25,9 @@ function RootComponent() {
       <Navbar />
       <MainContent>
         <Sidebar />
-        <Outlet />
+        <ContentArea>
+          <Outlet />
+        </ContentArea>
       </MainContent>
     </React.Fragment>
   );
