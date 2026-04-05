@@ -1,6 +1,10 @@
 import * as React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import Navbar from "../components/common";
+import { Navbar, Sidebar } from "../components/common";
+import styled from "styled-components";
+
+export const MainContent=styled.div`
+`
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -10,7 +14,10 @@ function RootComponent() {
   return (
     <React.Fragment>
       <Navbar />
-      <Outlet />
+      <MainContent>
+        <Sidebar />
+        <Outlet />
+      </MainContent>
     </React.Fragment>
   );
 }
