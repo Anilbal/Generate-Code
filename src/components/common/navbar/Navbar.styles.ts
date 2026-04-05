@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavbarContainer = styled.nav`
   height: 64px;
   border-bottom: 1px solid var(--color-border);
-  padding: 10px 40px;
+  padding: 0rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
