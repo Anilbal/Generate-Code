@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import { Navbar, Sidebar } from "../components/common";
+import { Navbar, RightSidebar, Sidebar } from "../components/common";
 import styled from "styled-components";
 
 const MainContent = styled.div`
@@ -28,6 +28,7 @@ function RootComponent() {
         <ContentArea>
           <Outlet />
         </ContentArea>
+        <RightSidebar />
       </MainContent>
     </React.Fragment>
   );

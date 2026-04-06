@@ -30,7 +30,6 @@ export const SidebarItem = styled.div<{ isActive?: boolean }>`
 
   &:hover {
     border: 1px solid #d4d7ddff;
-    // color: #111827;
   }
 
   svg {
