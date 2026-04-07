@@ -10,7 +10,7 @@ const MainContent = styled.div`
 
 const ContentArea = styled.main<{ isPreview?: boolean }>`
   flex: 1;
-  padding: ${(props) => (props.isPreview ? "0" : "1rem")};
+  padding: ${(props) => (props.isPreview ? "0" : "2rem")};
   background-color: ${(props) => (props.isPreview ? "white" : "#f3f4f6")};
   overflow-y: auto;
 `;

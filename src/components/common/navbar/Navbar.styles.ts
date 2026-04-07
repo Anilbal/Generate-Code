@@ -7,6 +7,10 @@ export const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color:var(--color-background)
 `;
 
 export const LogoContainer = styled.div`
