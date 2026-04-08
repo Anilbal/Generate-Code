@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
       <Logo />
       <ButtonContainer>
         <Link to="/preview" target="_blank">
-        <Button variant="outline">
-          <PreviewIcon /> preview
-        </Button>
+          <Button variant="outline">
+            <PreviewIcon /> preview
+          </Button>
         </Link>
         <Button variant="solid">
           <ExportIcon /> export <DropdownIcon />
